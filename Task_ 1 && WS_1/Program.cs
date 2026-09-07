@@ -56,17 +56,33 @@
             #endregion
 
             #region WS_2
-            Console.WriteLine("Enter a number:");
-            int n = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter a number:");
+            //int n = int.Parse(Console.ReadLine());
 
-            int number_fact = 1;
-            for (int i = 1; i <= n; i++)
-            {number_fact =number_fact * i;}
+            //int number_fact = 1;
+            //for (int i = 1; i <= n; i++)
+            //{number_fact =number_fact * i;}
 
-            Console.WriteLine(number_fact);
+            //Console.WriteLine(number_fact);
             #endregion
 
+            #region WS_3
+            Console.WriteLine("Enter a: ");
+            int a = int.Parse(Console.ReadLine());
 
+            Console.WriteLine("Enter b: ");
+            int b = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter c: ");
+            int c = int.Parse(Console.ReadLine());
+
+            if (a > b && a > c)
+                Console.WriteLine(a);
+            else if (b > a && b > c)
+                Console.WriteLine(b);
+            else
+                Console.WriteLine(c);
+            #endregion
 
         }
     }
