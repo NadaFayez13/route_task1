@@ -20,14 +20,14 @@
             //double total_grades = (grade1 + grade2 + grade3);
             //double avg_grades = total_grades / 3;
 
-           
+
             //Console.WriteLine("student name:" + name);
 
             //if (age >= 18)
             //    Console.WriteLine("age: " + age + "(adult)");
             //else
             //    Console.WriteLine("age: " + age + "(minor)");
-            
+
             //Console.WriteLine($"total grades:{total_grades:F2}");
             //Console.WriteLine($"avg grades: {avg_grades:F2}");
 
@@ -38,23 +38,37 @@
             #endregion
 
             #region WS_1
-            Console.WriteLine("Enter character:");
-            char character = char.Parse(Console.ReadLine());
-            switch (character)
-            {
-                case 'a' or 'A':
-                case 'e' or 'E':              
-                case 'i' or 'I':
-                case 'o' or 'O':
-                case 'u' or 'U':
-                    Console.WriteLine("vowel");
-                    break;
-                default:
-                    Console.WriteLine("consonant");
-                    break;
-            }
+            //Console.WriteLine("Enter character:");
+            //char character = char.Parse(Console.ReadLine());
+            //switch (character)
+            //{
+            //    case 'a' or 'A':
+            //    case 'e' or 'E':              
+            //    case 'i' or 'I':
+            //    case 'o' or 'O':
+            //    case 'u' or 'U':
+            //        Console.WriteLine("vowel");
+            //        break;
+            //    default:
+            //        Console.WriteLine("consonant");
+            //        break;
+            //}
             #endregion
+
+            #region WS_2
+            Console.WriteLine("Enter a number:");
+            int n = int.Parse(Console.ReadLine());
+
+            int number_fact = 1;
+            for (int i = 1; i <= n; i++)
+            {number_fact =number_fact * i;}
+
+            Console.WriteLine(number_fact);
+            #endregion
+
+
+
         }
     }
-    }
+}
     
