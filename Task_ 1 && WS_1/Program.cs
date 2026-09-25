@@ -67,21 +67,58 @@
             #endregion
 
             #region WS_3
-            Console.WriteLine("Enter a: ");
-            int a = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter a: ");
+            //int a = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Enter b: ");
+            //Console.WriteLine("Enter b: ");
+            //int b = int.Parse(Console.ReadLine());
+
+            //Console.WriteLine("Enter c: ");
+            //int c = int.Parse(Console.ReadLine());
+
+            //if (a > b && a > c)
+            //    Console.WriteLine(a);
+            //else if (b > a && b > c)
+            //    Console.WriteLine(b);
+            //else
+            //    Console.WriteLine(c);
+            #endregion
+
+            #region WS_4
+            Console.WriteLine("Enter a number:");
+            int a = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter an operator:");
+            char op = char.Parse(Console.ReadLine());
+            Console.WriteLine("Enter another number:");
             int b = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Enter c: ");
-            int c = int.Parse(Console.ReadLine());
-
-            if (a > b && a > c)
-                Console.WriteLine(a);
-            else if (b > a && b > c)
-                Console.WriteLine(b);
-            else
-                Console.WriteLine(c);
+            switch (op)
+            {
+                case '+':
+                    Console.WriteLine(a + b);
+                    break;
+                case '-':
+                    Console.WriteLine(a - b);
+                    break;
+                case '*':
+                    Console.WriteLine(a * b);
+                    break;
+                case '/':
+                    if (b != 0)
+                        Console.WriteLine(a / b);
+                    else
+                        Console.WriteLine("Error: Division by zero");
+                    break;
+                case '%':
+                    if (b != 0)
+                        Console.WriteLine(a % b);
+                    else
+                        Console.WriteLine("Error: Division by zero");
+                    break;
+                default:
+                    Console.WriteLine("Invalid operator");
+                    break;
+            }
             #endregion
 
         }
