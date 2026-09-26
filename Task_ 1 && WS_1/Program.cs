@@ -85,39 +85,54 @@
             #endregion
 
             #region WS_4
-            Console.WriteLine("Enter a number:");
-            int a = int.Parse(Console.ReadLine());
-            Console.WriteLine("Enter an operator:");
-            char op = char.Parse(Console.ReadLine());
-            Console.WriteLine("Enter another number:");
-            int b = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter a number:");
+            //int a = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter an operator:");
+            //char op = char.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter another number:");
+            //int b = int.Parse(Console.ReadLine());
 
-            switch (op)
+            //switch (op)
+            //{
+            //    case '+':
+            //        Console.WriteLine(a + b);
+            //        break;
+            //    case '-':
+            //        Console.WriteLine(a - b);
+            //        break;
+            //    case '*':
+            //        Console.WriteLine(a * b);
+            //        break;
+            //    case '/':
+            //        if (b != 0)
+            //            Console.WriteLine(a / b);
+            //        else
+            //            Console.WriteLine("Error: Division by zero");
+            //        break;
+            //    case '%':
+            //        if (b != 0)
+            //            Console.WriteLine(a % b);
+            //        else
+            //            Console.WriteLine("Error: Division by zero");
+            //        break;
+            //    default:
+            //        Console.WriteLine("Invalid operator");
+            //        break;
+            //  }
+            #endregion
+
+            #region WS_5
+            int[] numbers = { 1, 2, 3, 4, 5 };
+            foreach (int number in numbers)
             {
-                case '+':
-                    Console.WriteLine(a + b);
-                    break;
-                case '-':
-                    Console.WriteLine(a - b);
-                    break;
-                case '*':
-                    Console.WriteLine(a * b);
-                    break;
-                case '/':
-                    if (b != 0)
-                        Console.WriteLine(a / b);
-                    else
-                        Console.WriteLine("Error: Division by zero");
-                    break;
-                case '%':
-                    if (b != 0)
-                        Console.WriteLine(a % b);
-                    else
-                        Console.WriteLine("Error: Division by zero");
-                    break;
-                default:
-                    Console.WriteLine("Invalid operator");
-                    break;
+                if (number % 2 == 0)
+                {
+                    Console.WriteLine($"{number} is even");
+                }
+                else
+                {
+                    Console.WriteLine($"{number} is odd");
+                }
             }
             #endregion
 
