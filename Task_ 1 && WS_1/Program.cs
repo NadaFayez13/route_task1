@@ -136,6 +136,18 @@
             }
             #endregion
 
+            #region WS_6
+            Console.WriteLine("Enter a number:");
+            int n = int.Parse(Console.ReadLine());
+            int reversed = 0;
+            while (n != 0)
+            {
+                reversed = reversed * 10 + n % 10;
+                n /= 10;
+            }
+            Console.WriteLine($"Reversed number: {reversed}");
+            #endregion
+
         }
     }
 }
